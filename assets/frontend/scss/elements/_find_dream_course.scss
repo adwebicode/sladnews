@@ -1,0 +1,46 @@
+//Find Dream Course
+.dream-course-form {
+
+  .dream-course-search {
+    border-radius: 50px;
+    border: 2px solid #ebecf6;
+    height: 80px;
+    align-items: center;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+
+    .input-box {
+      position: relative;
+
+      i {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #f16001;
+      }
+
+      input {
+        border: 0;
+        padding-left: 35px;
+        color: #a6b2cf;
+      }
+    }
+  }
+
+  .dream-course-category {
+    select {
+      display: none;
+
+    }
+
+    .nice-select {
+      border: 0;
+      border-radius: 0;
+      border-left: 2px solid #d3dbef;
+      margin-right: 25px;
+
+    }
+  }
+}

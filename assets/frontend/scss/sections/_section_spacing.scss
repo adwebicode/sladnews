@@ -1,0 +1,91 @@
+/*---------------------------------------
+    ## Section Spacing
+---------------------------------------*/
+.deal-fo-the-week-area-wrapper {
+    &.index-01 {
+        padding-top: 90px;
+    }
+
+    &.index-02 {
+        .deal-of-the-week-slider-inst-index-02 {
+            position: relative;
+            @include slickarrow;
+        }
+
+    }
+}
+
+.featured-product-area-wrapper {
+    &.index-01 {
+        padding-top: 75px;
+    }
+}
+
+.fruits-area-wrapper {
+    &.index-01 {
+        padding-top: 67px;
+        padding-bottom: 48px;
+    }
+}
+
+.vegetables-area-wrapper {
+    &.index-01 {
+        padding-top: 90px;
+        margin-bottom: -18px;
+    }
+}
+
+.brand-area-wrapper {
+    &.index-01 {
+        padding-top: 89px;
+        padding-bottom: 92px;
+    }
+}
+
+.shop-campaing {
+    padding: 100px 0;
+}
+
+.shop-list-area-wrapper {
+    padding: 100px 0;
+
+    .single-product-view-list {
+        margin-bottom: 30px;
+    }
+}
+
+.blog-grid-area-wrapper {
+    padding: 100px 0;
+}
+
+.blog-list-area-wrapper {
+    padding: 100px 0;
+}
+
+.order-details-area-wrapper {
+    padding: 100px 0;
+}
+
+.your-order-area-wrapper {
+    padding: 100px 0;
+}
+
+.order-history-area-wrapper {
+    padding: 100px 0;
+}
+
+.cart-area-wrapper {
+    padding: 100px 0;
+}
+
+.wishlist-area-wrapper {
+    padding: 100px 0;
+}
+
+.edit-profile-area-wrapper {
+    padding: 100px 0;
+}
+
+.profile-area-wrapper {
+    padding: 100px 0;
+}

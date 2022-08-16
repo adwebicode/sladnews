@@ -1,0 +1,113 @@
+/*----------------------------
+    Top Bar
+----------------------------*/
+.topbar-area {
+    background-color: var(--bg-light-one);
+
+    .topbar-inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        .left-content {
+            display: flex;
+
+            .topbar-item {
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .right-content {
+            display: flex;
+
+            .topbar-item {
+                margin-left: 30px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+            }
+        }
+
+        .extra-menu {
+            .extra-menu-list {
+                .link-item {
+                    display: inline-block;
+                    margin-right: 15px;
+                    text-transform: capitalize;
+
+                    font-size: 14px;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .social-link-list {
+            .link-item {
+                a {
+                    
+
+                    
+                }
+            }
+        }
+
+        .select-option {
+            .single-select {
+                select {
+                    height: 21px;
+                    color: var(--paragraph-color);
+                    // background-color: var(--paragraph-color);
+                    border: none;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    font-weight: 400;
+                    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='gray'><polygon points='0,0 10,0 5,5'/></svg>");
+                    background-repeat: no-repeat;
+                    background-position-y: 76%;
+                    background-position-x: 94%;
+                    appearance: none;
+                    margin-right: 15px;
+                    padding: 0px 23px 0 5px;
+                    cursor: pointer;
+                    transition: all linear 0.2s;
+                    border: 1px solid #ddd;
+                }
+
+                &:last-child {
+
+                    select {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .topbar-login-btn {
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 14px;
+            font-weight: 400;
+            color: var(--paragraph-color);
+            transition: all linear 0.2s;
+
+            &:hover {
+                color: var(--main-color-one);
+            }
+
+        }
+    }
+}

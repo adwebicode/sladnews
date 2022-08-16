@@ -1,0 +1,89 @@
+/*---------------------------
+    Contact Us
+---------------------------*/
+
+.address-wrapper {
+    border-radius: 4px;
+    overflow: hidden;
+
+    .address-list {
+        background-color: #F2F3F5;
+        padding: 44px 47px 44px;
+
+        .single-address-item {
+            display: flex;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .icon-box {
+                margin-right: 15px;
+
+                .icon {
+                    font-size: 22px;
+                    color: #000;
+                    display: inline-block;
+                    line-height: 26px;
+                    color: var(--main-color-one);
+                }
+            }
+
+            .content {
+                .title {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    text-transform: initial;
+                    margin-bottom: 6px;
+                }
+
+                .info {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.get-in-touch-wrapper {
+    .title {
+        font-family: var(--heading-font);
+        font-size: 42px;
+        line-height: 60px;
+        font-weight: 700;
+        color: var(--heading-color);
+        text-transform: initial;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    input {
+        height: 50px;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 120px;
+        resize: none;
+        border-color: #ddd;
+        padding: 5px 10px;
+        border-radius: 3px;
+    }
+
+    .default-btn {
+        border: 1px solid #ddd;
+        background-color: transparent;
+        color: var(--heading-color-two);
+    }
+}
+
+.google-map-area {
+    margin-bottom: -6px;
+}

@@ -1,0 +1,169 @@
+/*---------------------------
+    Price Plan
+---------------------------*/
+/*price-plany-tabs*/
+.custom-tabs-menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  .custom-flex {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+    display: inline-block;
+    background: #fff;
+    line-height: 76px;
+    border-radius: 50px;
+    border: 2px solid #e6efff;
+
+    .nav-item {
+      display: inline-block;
+
+      .nav-link {
+        line-height: 60px;
+        padding: 0 50px;
+        font-weight: 700;
+        color: #809fb4;
+        border-radius: 30px;
+        opacity: .5;
+
+        &:hover,
+        &.active {
+          background: #06f;
+          color: #fff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.tab-content-wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  > li {
+    width: calc(100% / 4);
+  }
+}
+
+.single-price-plan-01 {
+  padding: 45px 0;
+  box-shadow: 0 8px 16px 20px rgba(220, 235, 255, .3);
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+
+  &:after {
+    height: 100%;
+    width: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+  }
+
+  &.active {
+    position: relative;
+    z-index: 40;
+    &:after {
+      position: absolute;
+      z-index: -1;
+      background: #704fff;
+      transform: scale(1.12);
+      @include transition($transition);
+    }
+
+    .price-header {
+      .title {
+        color: $white;
+      }
+    }
+    .price-body{
+      .price-wrap{
+        .price{
+          color: $white;
+          sub{
+            color: $white;
+          }
+        }
+      }
+      ul{
+        li{
+          color: $white;
+          i{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .price-header {
+    text-align: center;
+
+    .title {
+      color: #809fb4;
+      font-weight: 700;
+      font-family: var(--body-font);
+      font-size: 16px;
+    }
+  }
+
+
+  .price-body {
+    padding-bottom: 30px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+
+      li {
+        font-size: 16px;
+        color: #809fb4;
+        line-height: 26px;
+
+        + li {
+          margin-top: 10px;
+        }
+
+        i {
+          color: #6cdabd;
+          margin-right: 5px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .price-wrap {
+    text-align: center;
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    color: var(--heading-color);
+
+    sub {
+      font-size: 16px;
+      color: #809fb4;
+    }
+  }
+
+  .price-footer {
+    text-align: center;
+
+    .btn-wrapper {
+      .boxed-btn {
+        border: none;
+        background: #ff7891;
+        color: #fff;
+      }
+    }
+  }
+}

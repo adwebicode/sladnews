@@ -1,0 +1,89 @@
+/*----------------------------
+    About
+-----------------------------*/
+.about-area-wrapper {
+    padding-top: 100px;
+    padding-bottom: 90px;
+
+    .sec {
+        margin-bottom: 100px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .content-box {
+        width: 97%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .title {
+            font-family: var(--heading-font);
+            font-size: 45px;
+            line-height: 65px;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin: -15px 0 20px;
+        }
+
+        .info {
+            font-weight: 400;
+
+            &.mt {
+                margin-top: 15px;
+            }
+        }
+
+        .btn-wrapper {
+            margin-top: 36px;
+
+            a {
+                padding-left: 40px;
+                padding-right: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .advantage-box {
+        display: flex;
+        margin-top: 50px;
+
+        .support-item-wrap {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 50%;
+
+            .single-support-item {
+
+                .icon-box {
+                    .icon {
+                        color: var(--main-color-one);
+                    }
+                }
+
+                &::after {
+                    display: none;
+                }
+
+                .content {
+                    .title {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &:first-child {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+
+    .img-box {
+        img {
+            border-radius: 10px;
+        }
+    }
+}

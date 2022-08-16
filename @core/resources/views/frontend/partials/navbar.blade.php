@@ -1,0 +1,1 @@
+@include('frontend.partials.pages-portion.navbars.navbar-'.get_navbar_style())

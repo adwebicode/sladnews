@@ -1,0 +1,132 @@
+//business-single-item
+
+.we-single-item {
+  border: 2px solid #daeeff;
+  text-align: center;
+  padding: 40px 40px 10px;
+
+  &:hover {
+    .icon {
+      &:after {
+        transform: rotate(148deg);
+      }
+    }
+  }
+
+  .icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: #06f;
+    font-size: 34px;
+    border: 1px solid #eff8ff;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+
+    &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      border: 5px solid transparent;
+      border-top-color: #06f;
+      border-bottom-color: #06f;
+      z-index: -1;
+      border-radius: 50%;
+      transform: rotate(18deg);
+      @include transition($transition);
+    }
+  }
+
+  .content {
+    .title {
+      font-size: 24px;
+      line-height: 34px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//what-we-single-item
+.what-we-single-item {
+  .thumb {
+    position: relative;
+    z-index: 0;
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+      z-index: 6;
+    }
+    .title{
+      font-size: 24px;
+      color: #fff;
+      position: absolute;
+      z-index: 7;
+      bottom: 40px;
+      font-weight: 700;
+      left: 40px;
+    }
+  }
+  .content{
+    border: 2px solid #f2f2f9;
+    border-top: 0;
+    padding: 30px 40px 37px;
+    position: relative;
+    .icon{
+      position: absolute;
+      font-size: 100px;
+      color: #f1faff;
+      right: 15px;
+      bottom: 15px;
+      z-index: -1;
+    }
+    span{
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: #53cfa5;
+      text-align: right;
+    }
+    p{
+      color: #6b93aa;
+      line-height: 28px;
+      padding-top: 20px;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: '';
+        top: -20px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 18px solid #0066ff;
+        border-left: 18px solid transparent;
+      }
+    }
+    .btn-wrapper{
+      .graduate-btn{
+        height: 50px;
+        line-height: 42px;
+        border: 2px solid #f2f2f9;
+        padding: 0 30px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #6b93aa;
+        margin-top: 25px;
+        transition: all 0.3s ease-out 0s;
+        display: inline-block;
+      }
+    }
+  }
+}

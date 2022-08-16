@@ -1,0 +1,42 @@
+/*---------------------------
+    Error
+---------------------------*/
+.error-area-wrapper {
+    .title {
+        font-family: var(--heading-font-two);
+        font-size: 42px;
+        line-height: 60px;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-bottom: 40px;
+    }
+
+    .img-box {
+        text-align: center;
+        margin-bottom: 60px;
+
+        .logo {
+            position: relative;
+            animation-name: logo404;
+            animation-duration: 1s;
+
+            @keyframes logo404 {
+                from {
+                    top: 60px;
+                }
+                to {
+                    top: 0;
+                }
+              }
+        }
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 34px;
+
+        .btn-wrapper {
+            margin-top: 40px;
+        }
+    }
+}

@@ -1,0 +1,91 @@
+/*----------------------------------------------
+    # Order history
+----------------------------------------------*/
+.order-history-inner {
+    overflow-x: auto;
+    table {
+        border: 1px solid var(--form-bg-color);
+        border-radius: 4px;
+        width: 100%;
+
+        thead {
+            background-color: var(--form-bg-color);
+
+            tr {
+                display: table-row;
+
+                th {
+                    display: table-cell;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #666666;
+                    text-transform: capitalize;
+                    padding: 15px 30px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border: 1px solid var(--form-bg-color);
+                display: table-row;
+
+                td {
+                    display: table-cell;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: var(--heading-color);
+                    text-transform: capitalize;
+                    padding: 28px;
+
+                    &.order-numb {
+                        min-width: 135px;
+                    }
+
+                    &.date {
+                        min-width: 160px;
+                    }
+
+                    &.status {
+                        min-width: 160px;
+                    }
+
+                    &.quantity {
+                        min-width: 130px;
+                    }
+
+                    &.table-btn {
+                        min-width: 210px;
+                    }
+
+                    &.amount {
+                        font-weight: 600;
+                        min-width: 150px;
+                    }
+
+                    &.pay-method {
+                        text-transform: initial;
+                    }
+                }
+
+                &.completed {
+                    .status {
+                        color: var(--main-color-one);
+                    }
+                }
+
+                &.pending {
+                    .status {
+                        color: #F55D2C;
+                    }
+                }
+
+                &.candeled {
+                    .status {
+                        color: #DF0000;
+                    }
+                }
+            }
+        }
+    }
+}

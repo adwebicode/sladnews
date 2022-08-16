@@ -1,0 +1,183 @@
+/*--------------------------------------------------------------
+	## Register
+--------------------------------------------------------------*/
+
+// Sign in
+
+.register {
+    position: relative;
+    animation-name: register;
+    animation-duration: 1s;
+
+    @keyframes register {
+        from {
+            top: 60px;
+        }
+
+        to {
+            top: 0;
+        }
+    }
+
+    .title {
+        font-family: var(--heading-font);
+        font-size: 42px;
+        line-height: 35px;
+        font-weight: 700;
+        color: var(--heading-color);
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .form-wrapper {
+        form {
+            .form-group {
+                margin-bottom: 20px;
+            }
+
+            label {
+                font-family: var(--heading-font-two);
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 500;
+                color: var(--heading-color);
+
+                .required {
+                    color: var(--main-color-one);
+                }
+            }
+
+            input {
+                height: 50px;
+                color: var(--heading-color);
+                background-color: #F2F3F5;
+                border-color: transparent;
+
+                &::placeholder {
+                    color: #666666;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .box-wrap {
+            display: flex;
+            justify-content: space-between;
+            color: #999999;
+
+            .left {
+                display: flex;
+                align-items: center;
+
+                input {
+                    height: auto;
+                    display: inline-block;
+                    margin-bottom: 3px;
+                }
+
+                label {
+                    font-size: 14px;
+                    font-weight: 400;
+
+                    a {
+                        color: var(--main-color-one);
+                    }
+                }
+            }
+
+            .right {
+                a {
+                    color: var(--main-color-one);
+                    font-size: 14px;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+                }
+            }
+
+            &.sign-up {
+                .left {
+                    align-items: baseline;
+                }
+
+                input {
+                    margin-top: 7px;
+                }
+            }
+        }
+
+        .btn-wrapper {
+            margin-bottom: 18px;
+
+            .btn-default {
+                width: 100%;
+                font-weight: 600;
+            }
+        }
+
+        .or {
+            text-align: center;
+            text-transform: capitalize;
+            position: relative;
+            margin: 33px 0 17px;
+
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                height: 1px;
+                background-color: #ddd;
+            }
+
+            .text {
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                padding: 0 40px;
+                color: #666666;
+                background-color: #fff;
+            }
+        }
+
+        .sign-in-with {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .special-account {
+                margin-top: 15px;
+                border: 1px solid #ddd;
+                text-align: center;
+                padding: 11px 10px 11px;
+
+                .icon-box {
+                    display: inline-block;
+                    padding-right: 10px;
+                }
+            }
+        }
+
+        .info {
+            text-align: center;
+            color: #666666;
+            margin-top: 20px;
+
+            .active {
+                color: var(--main-color-one);
+                font-weight: 600;
+                transition: all linear 0.2s;
+
+                &:hover {
+                    color: var(--main-color-one);
+                }
+
+            }
+        }
+    }
+}

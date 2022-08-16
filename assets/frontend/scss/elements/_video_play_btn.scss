@@ -1,0 +1,116 @@
+/*--------------------------
+    Video Play Button
+--------------------------*/
+
+.video-play-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 16px;
+  background-color: var(--main-color-one);
+  color: $white;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    /* IE 9 */
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    /* Chrome, Safari, Opera */
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(#eaf2f5, .5);
+    z-index: -1;
+  }
+
+  &.style-01 {
+    background-color: var(--main-color-one);
+    color: $white;
+
+    &::before {
+      background-color: var(--main-color-one);
+    }
+
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.video-play-btn-02 {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--main-color-one);
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    /* IE 9 */
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    /* Chrome, Safari, Opera */
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    //background: $white;
+    animation: pulse-border 1500ms ease-out infinite;
+    z-index: -1;
+  }
+
+  &.style-01 {
+    background-color: var(--main-color-one);
+    color: $white;
+
+    &::before {
+      background-color: var(--main-color-one);
+    }
+
+    &:focus,
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.video-play-btn:hover,
+.video-play-btn:focus {
+  color: $white;
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.8);
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.8);
+    opacity: 0;
+  }
+}

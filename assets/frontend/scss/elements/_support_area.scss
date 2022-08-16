@@ -1,0 +1,68 @@
+/*---------------------------------------
+    ## Support Area
+---------------------------------------*/
+.support-area-wrapper {
+    &.index-01 {
+        background-color: var(--form-bg-color);
+        padding: 50px 0;
+    }
+
+    &.index-03 {
+        padding: 50px 0;
+        background-color: transparent;
+    }
+
+    .support-item-wrap {
+
+        .single-support-item {
+            display: flex;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                right: -37px;
+                width: 3px;
+                height: 50px;
+                background-color: #ddd;
+            }
+
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+
+            .icon-box {
+                align-self: center;
+                margin-right: 20px;
+
+                .icon {
+                    color: var(--secondary-color);
+                    font-size: 50px;
+                    display: inline-block;
+                    line-height: 0;
+                }
+            }
+
+            .content {
+                align-self: center;
+
+                .title {
+                    font-size: 22px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+
+                .info {
+                    font-size: 12px;
+                    line-height: 10px;
+                    font-weight: 400;
+                    color: #999999;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+}

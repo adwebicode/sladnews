@@ -1,0 +1,39 @@
+/*Wp  BlockQuote */
+blockquote:not(.has-light-gray-color):not(.has-very-dark-gray-color):not(.is-style-large):not(.is-style-large) {
+  background-color: var(--main-color-two);
+  padding: 40px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: none;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 0;
+  &:before{
+    content: "\f10d";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    right: 45px;
+    color: #fff;
+    font-size: 180px;
+    line-height: .8;
+    opacity: .1;
+  }
+  p{
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    font-size: 28px;
+    line-height: 1.5;
+    font-style: italic;
+  }
+  cite {
+    color: #fff !important;
+    margin-top: 10px;
+    display: block;
+    font-style: normal;
+  }
+}

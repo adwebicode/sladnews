@@ -1,0 +1,95 @@
+/*-------------------------
+    Testimonial Area
+--------------------------*/
+.testimonial-area-wrapper {
+    .single-testimonial-item {
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 15px;
+        box-shadow: 0px 0px 16px -7px #00000045;
+        border-radius: 5px;
+        overflow: hidden;
+
+        .top-box {
+            height: 55%;
+            background-color: #F2F3F5;
+            padding: 19px 28px 28px;
+            transition: all linear 0.2s;
+
+            .info {
+                color: #999999;
+            }
+        }
+
+        .bottom-box {
+            height: 45%;
+            position: relative;
+
+            .img-box {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -35px;
+
+                img {
+                    border: 3px solid #fff;
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                font-family: var(--heading-font);
+                font-size: 18px;
+                line-height: 26px;
+                font-weight: 500;
+                padding-top: 50px;
+                color: #999999;
+                text-transform: capitalize;
+                transition: all linear 0.2s;
+            }
+
+            .post {
+                font-size: 14px;
+                line-height: 26px;
+                font-weight: 400;
+                font-style: italic;
+                color: #999999;
+                transition: all linear 0.2s;
+            }
+
+            .icon-wrap {
+                .icon {
+                    color: #999999;
+                    transition: all linear 0.2s;
+                }
+            }
+        }
+
+        &.slick-current {
+            .top-box {
+                background-color: var(--main-color-one);
+                
+                .info {
+                    color: #fff;
+                }
+            }
+
+            .bottom-box {
+                .name, .post {
+                    color: var(--heading-color);
+                }
+                .icon-wrap {
+                    .icon {
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-track {
+        padding: 5px 0;
+    }
+}

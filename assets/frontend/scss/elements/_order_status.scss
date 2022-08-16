@@ -1,0 +1,120 @@
+/*----------------------------------------------
+    # Order status
+----------------------------------------------*/
+.order-status-wrap {
+
+
+    .order-status-inner {
+
+        width: 100%;
+
+        tbody {
+            tr {
+                border: 1px solid var(--form-bg-color);
+                border-radius: 4px;
+                display: flex;
+                justify-content: space-between;
+                padding: 36px 50px;
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                td {
+                    .order-number {
+                        font-family: var(--heading-color);
+                        font-size: 20px;
+                        font-weight: 700;
+                        color: var(--heading-color);
+                        display: block;
+                        text-transform: capitalize;
+                    }
+
+                    .price {
+                        font-family: var(--heading-color);
+                        font-size: 30px;
+                        font-weight: 500;
+                        color: var(--main-color-one);
+                        display: block;
+                        line-height: 44px;
+                        margin-top: 10px;
+                    }
+
+                    .date,
+                    .time {
+                        display: block;
+                        color: #999999;
+                    }
+
+                    .ratings {
+                        color: #999999;
+                        display: block;
+                        margin-top: 10px;
+                    }
+
+                    .btn-wrapper {
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        .order-btn-custom {
+                            display: inline-block;
+                            font-weight: 600;
+                            background-color: var(--form-bg-color);
+                            color: #999999;
+                            padding: 7px 26px 9px;
+                            border-radius: 30px;
+                            text-transform: capitalize;
+
+                            &:last-child {
+                                margin-left: 10px;
+                            }
+
+                            &.re-order {
+                                background-color: #F55D2C;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        text-align: right;
+                    }
+                }
+
+                &.complete {
+                    .ratings {
+                        .icon {
+                            color: var(--secondary-color);
+                        }
+                    }
+                    .btn-wrapper {
+                        .status {
+                            background-color: #00B106;
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.pending {
+                    .btn-wrapper {
+                        .status {
+                            background-color: #F55D2C;
+                            color: $white;
+                        }
+                    }
+                }
+
+                &.rejected {
+                    .btn-wrapper {
+                        .status {
+                            background-color: #DF0000;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

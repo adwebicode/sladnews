@@ -1,0 +1,81 @@
+/*----------------------------
+    Image blog
+----------------------------*/
+.image-blog-style-01 {
+    position: relative;
+
+    .img-box {
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to top, #000000, #0000004a, #0000);
+            left: 0;
+            top: 0;
+        }
+
+        &.border-radious {
+            border-radius: 10px;
+            overflow: hidden;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        bottom: 0;
+        padding: 0 40px 40px;
+
+        .title {
+            font-family: var(--heading-font-one);
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 400;
+            text-transform: initial;
+            margin: 15px 0 30px;
+            color: $white;
+            transition: all linear 0.2s;
+
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+    }
+
+    &.v-02 {
+        .title {
+            font-family: var(--heading-font-two);
+            font-size: 52px;
+            line-height: 64px;
+            font-weight: 700;
+        }
+
+        &.small {
+            .title {
+                font-size: 28px;
+                line-height: 40px;
+                font-weight: 700;
+                margin-bottom: 0;
+
+                &.v-02 {
+                    font-size: 40px;
+                    line-height: 58px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &.light {
+        .title {
+            &:hover {
+                color: var(--main-color-two);
+            }
+        }
+    }
+}

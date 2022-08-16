@@ -1,0 +1,45 @@
+/*-----------------------------
+    Call To Action Area
+-----------------------------*/
+
+.call-to-action-area {
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.call-to-action-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .title {
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        color: $white;
+        span {
+            font-weight: 600;
+        }
+    }
+}
+
+.call-to-action-item {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    padding: 75px 0 70px;
+    .icon {
+        margin-right: 20px;
+        font-size: 45px;
+        line-height: 45px;
+        color: #111;
+    }
+    .subtitle {
+        font-family: var(--heading-font);
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #111;
+    }
+}

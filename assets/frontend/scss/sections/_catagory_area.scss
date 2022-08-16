@@ -1,0 +1,41 @@
+/*--------------------------------------------------------------
+	## Catagory area
+--------------------------------------------------------------*/
+.category-area-wrapper {
+    padding: 82px 0 86px;
+
+    .category-slider-inst {
+        .single-slider-item {
+            margin: 0 15px;
+
+            .img-box {
+                text-align: center;
+
+                &.bg {
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+
+            .content {
+                margin-top: 15px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 23px;
+                    text-transform: capitalize;
+                    text-align: center;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+                }
+            }
+        }
+
+        @include slickarrow;
+    }
+}

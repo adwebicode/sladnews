@@ -1,0 +1,122 @@
+/*case-study-tabs*/
+.case-study-tabs {
+  .custom-tabs-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    border-bottom: 2px solid #e9f3ff;
+    margin-bottom: 50px;
+
+    .nav-item {
+      width: calc(100% / 5);
+
+      + li {
+        padding-left: 15px;
+      }
+
+      .nav-link {
+        color: #6b93aa;
+        text-transform: capitalize;
+        font-weight: 700;
+        border-radius: 0;
+        padding-bottom: 30px;
+        background: #fff;
+        border: none;
+        text-align: center;
+        transition: all 500ms ease-in;
+
+        span {
+          color: var(--heading-color);
+          font-weight: 500;
+        }
+
+        &:hover,
+        &.active {
+          background-color: transparent;
+          border-bottom: 4px solid #0066ff;
+          color: #001b61;
+        }
+      }
+    }
+  }
+
+  .tab-inner {
+    padding: 30px;
+    background-color: #fff;
+    display: flex;
+
+    &.style-01 {
+      flex-direction: row-reverse;
+      .tab-thumb{
+        margin-right: 0;
+        margin-left: 40px;
+      }
+    }
+
+    .tab-thumb {
+      margin-right: 40px;
+    }
+
+    .tab-content-wrap {
+      flex: 1;
+    }
+
+    .right-side {
+      padding-left: 0px;
+      position: relative;
+      height: 100%;
+      z-index: 1;
+
+      span {
+        font-size: 24px;
+        line-height: 36px;
+        color: #0aaea7;
+        padding-bottom: 5px;;
+      }
+
+      .title {
+        font-size: 50px;
+        line-height: 60px;
+        color: #001b61;
+        padding-bottom: 18px;
+        font-weight: 700;
+
+        span {
+          font-size: 50px;
+          line-height: 60px;
+          color: #ff50af;
+          font-weight: 700;
+        }
+      }
+
+      .read-btn {
+        line-height: 60px;
+        border-radius: 30px;
+        background: #24ffce;
+        font-size: 14px;
+        font-weight: 700;
+        color: #001b61;
+        border: 0;
+        padding: 0 55px;
+        margin-top: 35px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        transition: 500ms ease-in;
+
+        i {
+          padding-right: 5px;
+        }
+
+        &:hover {
+          background-color: #001b61;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

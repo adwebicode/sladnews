@@ -1,0 +1,90 @@
+/*----------------------------
+    Index-03
+----------------------------*/
+.image-blog-post-small {
+    &.index-03 {
+        &.one {
+            .image-blog-style-01 {
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.popular-stories-index-03-slider-inst {
+    @include sliderArrowOne;
+
+    .next-arrow {
+        right: 15px;
+    }
+
+    .prev-arrow {
+        right: 55px;
+    }
+}
+
+.index-03-wrapper {
+    .header-area-wrapper {
+        .image-blog-style-01 {
+            .title {
+                color: #fff;
+            }
+
+            .post-meta {
+                .post-meta-item {
+                    color: rgba(255, 255, 255, 0.885);
+                }
+            }
+        }
+    }
+
+    .latest-videos-area-wrapper {
+        .recent-blog-post-style-01 {
+            .single-blog-post-item {
+                margin-bottom: 38px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .stories-of-the-week {
+        .single-recent-stories-wrap {
+            margin-bottom: 38px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .stories-of-the-week-area-wrapper {
+        .stories-of-the-week-inner {
+            .blog-list-style-01 {
+                margin-bottom: 38px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .monthly-highlights {
+        .recent-blog-post-style-01 {
+            .single-blog-post-item {
+                margin-bottom: 28px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

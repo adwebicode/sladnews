@@ -1,0 +1,245 @@
+/*---------------------------------------
+    ## Countdown area
+---------------------------------------*/
+.count-down-area-wrapper {
+    margin-top: 90px;
+    margin-bottom: 86px;
+
+    &.bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: 0.85;
+        }
+
+        .top-shape,
+        .bottom-shape,
+        .left-shape,
+        .right-shape {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .top-shape {
+            top: -1px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+        }
+
+        .bottom-shape {
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 40px;
+        }
+
+        .left-shape {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -75px;
+
+
+        }
+
+        .right-shape {
+            top: 57%;
+            transform: translateY(-50%);
+            right: -113px;
+        }
+    }
+
+    .count-down-inner {
+        height: 600px;
+
+        .content {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .offer {
+                display: block;
+                font-size: 20px;
+                line-height: 60px;
+                font-weight: 600;
+                text-transform: capitalize;
+                color: var(--main-color-one);
+            }
+
+            .title {
+                font-size: 60px;
+                line-height: 75px;
+                font-weight: 700;
+                color: $white;
+            }
+
+            .btn-wrapper {
+                a {
+                    border-color: $white;
+                    padding: 16px 38px 15px;
+                    color: var(--main-color-one);
+                    font-weight: 600;
+
+                    &:hover {
+                        background-color: var(--main-color-one);
+                        border-color: var(--main-color-one);
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.flash-countdown-style-1 {
+    display: flex;
+    margin: 52px 0 28px;
+
+    .single-box {
+        height: 138px;
+        width: 138px;
+        border-radius: 50%;
+        background-color: var(--main-color-one);
+        margin: 0px 15px 0;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+
+        .time {
+            font-family: var(--heading-font);
+            font-size: 48px;
+            line-height: 26px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+
+        .label {
+            font-family: var(--heading-font);
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    .colon {
+        font-size: 48px;
+        color: $white;
+        line-height: 130px;
+    }
+}
+
+.flash-countdown-style-2 {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0 0;
+
+    .single-box {
+        height: 60px;
+        width: 60px;
+        background-color: $white;
+        color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0 5px;
+
+        .time {
+            font-family: var(--heading-font);
+            font-size: 22px;
+            line-height: 29px;
+            font-weight: 500;
+        }
+    }
+
+    .colon {
+        font-size: 35px;
+        color: var(--secondary-color);
+        line-height: 52px;
+    }
+}
+
+
+.shop-campaing {
+    .single-product-view-grid-style-03 {
+        .product-thumb {
+            position: relative;
+            .flash-countdown-style-1 {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                margin: 0;
+                transition: all linear 0.1s;
+                .single-box {
+                    height: 68px;
+                    width: 68px;
+                    display: block;
+                    padding-top: 4px;
+                    margin: 0px 10px 0;
+            
+                    .time {
+                        font-size: 22px;
+                        line-height: 30px;
+                    }
+            
+                    .label {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+            
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            
+                .colon-wrap {
+                    height: 68px;
+                    position: relative;
+                    .colon {
+                        top: 0;
+                        font-size: 48px;
+                        color: #999999;
+                        line-height: initial;
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            .flash-countdown-style-1 {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+}

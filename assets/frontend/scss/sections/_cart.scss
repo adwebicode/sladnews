@@ -1,0 +1,136 @@
+/*---------------------------------------
+    ## Cart
+---------------------------------------*/
+.cart-inner-content {
+    table {
+        width: 100%;
+        border: 1px solid var(--form-bg-color);
+
+        thead {
+            background-color: var(--form-bg-color);
+
+            tr {
+                th {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 600;
+                    color: #666666;
+                    text-transform: capitalize;
+                    padding: 15px 30px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border: 1px solid var(--form-bg-color);
+
+                td {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: 400;
+                    color: var(--heading-color);
+                    text-transform: capitalize;
+                    padding: 15px 30px;
+
+                    .product-info-wrap {
+                        display: flex;
+
+                        img {
+                            border: 1px solid var(--form-bg-color);
+                        }
+
+                        .product-title {
+                            align-self: center;
+                            padding-left: 15px;
+                        }
+                    }
+
+                    &.remove {
+                        .icon {
+                            color: #F55D2C;
+                        }
+                    }
+
+                    &.quantity {
+                        .cart-control {
+                            width: 84px;
+                            margin: 0 40px 0 0;
+                            position: relative;
+                            text-align: center;
+
+                            input {
+                                width: 100px;
+                                height: 40px;
+                                font-size: 16px;
+                                text-align: center;
+                                color: var(--heading-color);
+                                border: none;
+                            }
+
+                            .minus,
+                            .plus {
+                                position: absolute;
+                                top: 50%;
+                                font-size: 12px;
+                                color: #333;
+                                transform: translateY(-50%);
+                                cursor: pointer;
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                border-radius: 50%;
+                                background-color: var(--form-bg-color);
+                                transition: all linear 0.2s;
+
+                                &:hover {
+                                    color: $white;
+                                    background-color: var(--main-color-one);
+                                }
+                            }
+
+                            .minus {
+                                left: 0px;
+                            }
+
+                            .plus {
+                                right: -15px;
+                            }
+
+                            input[type=number]::-webkit-inner-spin-button,
+                            input[type=number]::-webkit-outer-spin-button {
+                                appearance: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .coupon-and-btn {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .search-form {
+            input {
+                width: 270px;
+            }
+        }
+
+        .btn-wrapper {
+            .btn-default {
+                height: 50px;
+                line-height: 30px;
+                font-weight: 600;
+
+                &.disable {
+                    background-color: var(--form-bg-color);
+                    border-color: var(--form-bg-color);
+                    color: #666666;
+                }
+            }
+        }
+    }
+}

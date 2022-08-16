@@ -1,0 +1,62 @@
+/*---------------------------------------
+    ## Index 01
+---------------------------------------*/
+.top-and-trendy-stories-area-wrapper {
+    .top-stories-and-trendy-stories-list {
+        .recent-blog-post-style-01 {
+            margin-top: 60px;
+
+            .single-blog-post-item {
+                padding-top: 27px;
+                border-top: 1px solid #DDDDDD;
+
+                &:first-child {
+                    padding-top: 0;
+                    border-top: none;
+                }
+            }
+        }
+
+        .btn-wrapper {
+            margin-top: 30px;
+            .btn-default {
+                color: #666666;
+            }
+        }
+    }
+}
+
+.weekly-highlights-index-01-slider-inst {
+    @include sliderArrowOne;
+}
+
+// latest videos
+.latest-vieos-area-wrapper {
+    &.index-01 {
+        .videos-blog-list {
+            li {
+                padding-top: 19px;
+                margin-bottom: 18px;
+                border-top: 1px solid #DDDDDD;
+
+                &:first-child {
+                    padding-top: 0;
+                    border-top: none;
+                }
+
+                &:last-child {
+                    margin-bottom: 0
+                }
+            }
+        }
+    }
+}
+
+// index-01
+.popular-stories-area-wrapper {
+    &.index-01 {
+        .popular-stories-index-01-slider-inst {
+            @include sliderArrowOne;
+        }
+    }
+}

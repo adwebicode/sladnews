@@ -1,0 +1,350 @@
+/*----------------------------
+    Social Link
+----------------------------*/
+.social-link-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+    .link-item {
+        display: inline-block;
+        margin: 0 5px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            color: var(--paragraph-color);
+            transition: all linear 0.2s;
+
+           
+
+            .icon {
+                font-size: 14px;
+            }
+
+            &:hover {
+                color: var(--main-color-one);
+            }
+
+            &:hover {
+
+                &.facebook {
+                    color: $facebook;
+                }
+
+                &.twitter {
+                    color: $twitter;
+                }
+
+                &.linkedin {
+                    color: $linkedin;
+                }
+
+                &.instagram {
+                    color: $instagram;
+                }
+
+                &.youtube {
+                    color: $youtube;
+                }
+
+                &.rss {
+                    color: $rss;
+                }
+            }
+        }
+    }
+
+    &.style-02 {
+        .link-item {
+            a {
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    transition: all linear 0.2s;
+                }
+
+                .facebook {
+                    background-color: $facebook;
+                }
+
+                .twitter {
+                    background-color: $twitter;
+                }
+
+                .linkedin {
+                    background-color: $linkedin;
+                }
+
+                .instagram {
+                    background-color: $instagram;
+                }
+
+                .youtube {
+                    background-color: $youtube;
+                }
+
+                &:hover {
+                    .icon {
+                        background-color: #fff;
+                    }
+
+                    .facebook {
+                        color: $facebook;
+                    }
+
+                    .twitter {
+                        color: $twitter;
+                    }
+
+                    .linkedin {
+                        color: $linkedin;
+                    }
+
+                    .instagram {
+                        color: $instagram;
+                    }
+
+                    .youtube {
+                        color: $youtube;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.author-social-link {
+    .link-item {
+        display: inline-block;
+        margin: 0 5px;
+
+        a {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: #F2F3F5;
+            text-align: center;
+            line-height: 25px;
+            font-size: 14px;
+            transition: all linear 0.2s;
+
+            &.facebook {
+                color: $facebook;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $facebook;
+                }
+            }
+
+            &.twitter {
+                color: $twitter;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $twitter;
+                }
+            }
+
+            &.linkedin {
+                color: $linkedin;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $linkedin;
+                }
+            }
+
+            &.instgram {
+                color: $instagram;
+
+                &:hover {
+                    color: #fff;
+                    background-color: $instagram;
+                }
+            }
+        }
+    }
+}
+
+
+/*----------------------------
+      Post Meta
+  ----------------------------*/
+.post-meta {
+    .post-meta-list {
+        .post-meta-item {
+            display: inline-block;
+            margin-right: 20px;
+            color: #999999;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 400;
+            text-transform: capitalize;
+
+            .icon {
+                display: inline-block;
+                margin-right: 6px;
+                color: var(--main-color-one);
+            }
+
+            .text {
+                display: inline-block;
+
+                &.author {
+                    font-weight: 500;
+                    color: #666666;
+                    transition: $transition;
+
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+                }
+            }
+
+            .image {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 6px;
+            }
+
+            a {
+                display: inline-block;
+
+                transition: all linear 0.2s;
+
+                &:hover {
+                    color: var(--main-color-one) !important;
+                }
+            }
+        }
+
+        &.style-02 {
+            .post-meta-item {
+                position: relative;
+                padding-right: 21px;
+                margin-right: 18px;
+
+                .text {
+                    &.author {
+                        font-weight: 500;
+                    }
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 1px;
+                    width: 2px;
+                    height: 17px;
+                    background-color: #999999;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &.light {
+                .post-meta-item {
+                    color: #999999;
+                    font-weight: 400;
+
+                    .author {
+                        color: #666666;
+                        font-weight: 500;
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: var(--main-color-two) !important;
+                        }
+                    }
+
+                    a {
+                        transition: all linear 0.2s;
+
+                        &:hover {
+                            color: var(--main-color-two) !important;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    &.main-color-02 {
+        .post-meta-list {
+            .post-meta-item {
+                a {
+                    color: #fff;
+                    opacity: 0.85;
+
+                    .icon {
+                        color: var(--main-color-two);
+                    }
+
+                    &:hover {
+                        color: var(--main-color-two);
+                    }
+                }
+            }
+        }
+    }
+
+    &.color-white {
+        .post-meta-list {
+            .post-meta-item {
+                .text {
+                    color: $white;
+                }
+
+                a {
+                    .text {
+                        transition: $transition;
+
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    &.color-black {
+        .post-meta-list {
+            .post-meta-item {
+                .text {
+                    color: #333333;
+                }
+
+                a {
+                    .text {
+                        transition: $transition;
+
+                    &:hover {
+                        color: var(--main-color-one);
+                    }
+                    }
+                }
+            }
+        }
+    }
+}

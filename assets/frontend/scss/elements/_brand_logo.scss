@@ -1,0 +1,18 @@
+/*---------------------------------------
+    ## Brand Logo
+---------------------------------------*/
+.brand-area-wrapper {
+    .brand-item-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .single-brand-item {
+            align-self: center;
+            
+            img {
+                margin: auto;
+            }
+        }
+    }
+}

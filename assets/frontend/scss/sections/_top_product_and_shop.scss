@@ -1,0 +1,47 @@
+/*--------------------------------------------------------------
+	## top product || shop
+--------------------------------------------------------------*/
+.btn-list-wrapper {
+    margin-bottom: 60px;
+
+    .btn-list {
+        text-align: center;
+
+        li {
+
+            display: inline-block;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid var(--form-bg-color);
+            background-color: var(--form-bg-color);
+            color: #666666;
+            text-transform: capitalize;
+            padding: 7px 25px 9px;
+            transition: all linear 0.2s;
+            line-height: 20px;
+            border-radius: 25px;
+            margin: 0 10px;
+
+            &:hover,
+            &.active {
+                background-color: var(--main-color-one);
+                border-color: var(--main-color-one);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -7px;
+
+    .single-grid {
+        padding: 0 7px;
+        width: 20%;
+    }
+}

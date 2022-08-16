@@ -1,0 +1,49 @@
+//Course Category Item
+
+.course-category-item {
+  border: 1px solid #ebecf6;
+  padding: 80px 0 78px;
+  position: relative;
+  text-align: center;
+  @include transition($transition);
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform: scale(1);
+    @include transition($transition);
+    background: #fff;
+  }
+  .icon{
+    font-size: 80px;
+    color: #ff154c;
+    @include transition($transition);
+  }
+  .content{
+    .title{
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--heading-color);
+      @include transition($transition);
+    }
+  }
+  &:hover{
+    z-index: 10;
+    &:before{
+      transform: scale(1.15);
+      background: #8976ff;
+    }
+    .icon{
+      color: $white;
+    }
+    .content{
+      .title{
+        color: $white;
+      }
+    }
+  }
+}

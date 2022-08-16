@@ -1,0 +1,28 @@
+/*----------------------------
+    News Headline
+----------------------------*/
+.news-headline-list {
+    .news-heading-item {
+        padding-bottom: 32px;
+        margin-top: 28px;
+        border-bottom: 1px solid #fff;
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .title {
+            font-family: var(--main-color-two);
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 22px;
+        } 
+    }
+}

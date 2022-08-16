@@ -1,0 +1,165 @@
+/*-------------------------
+    Section Title
+-------------------------*/
+
+.section-title-inner {
+  &.white {
+    .subtitle {
+      color: rgba($white, .7);
+    }
+
+    .title {
+      color: $white;
+    }
+
+    p {
+      color: rgba($white, .7);
+    }
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    margin-bottom: 18px;
+
+    span {
+      color: var(--main-color-one);
+    }
+  }
+
+  .subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    padding-left: 80px;
+    margin-bottom: 8px;
+
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 10px;
+      height: 2px;
+      width: 60px;
+      background-color: var(--main-color-one);
+      content: '';
+    }
+  }
+
+  p {
+  }
+}
+
+.section-title {
+  &.white {
+    .subtitle {
+      color: var(--main-color-one);
+    }
+
+    .title {
+      color: $white;
+    }
+
+    p {
+      color: rgba($white, .7);
+    }
+
+    .section-para {
+      color: rgba($white, .7);
+    }
+  }
+
+  .title {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    margin-bottom: 14px;
+
+    span {
+      color: #ff9595;
+      position: relative;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 80px;
+
+    }
+
+    &.shape {
+      padding-top: 55px;
+      position: relative;
+      z-index: 0;
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-bottom: 18px solid #fff;
+        border-left: 18px solid transparent;
+      }
+    }
+  }
+
+  &[style="text-align:left"] {
+    .title {
+      &.shape {
+        &:before {
+          left: 0;
+          transform: inherit;
+        }
+      }
+    }
+  }
+
+
+  .subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-left: 20px;
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    margin-bottom: 8px;
+    color: var(--main-color-one);
+
+    .line {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--main-color-one);
+    }
+
+    .line-one {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: var(--main-color-one);
+    }
+  }
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--body-font);
+    color: var(--main-color-one);
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+  }
+}

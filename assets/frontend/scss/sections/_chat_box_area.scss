@@ -1,0 +1,106 @@
+// Chat Box Area
+.profit-chart-box{
+    background-color: transparent;
+    min-height: 420px;
+    height: 100%;
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 80px;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+        background: #fff;
+    }
+    .chart-logo{
+        width: 100px;
+        height: 100px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 20px;
+        &:before{
+            content: '';
+            border: 4px solid #f3f5f7;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+        }
+    }
+    .profit-icon{
+        height: 100px;
+        width: 100px;
+        justify-content: center;
+        border: 4px solid #f3f5f7;
+        text-align: center;
+        padding: 18px 0px;
+        background: #fff;
+        position: absolute;
+        transition: all 500ms ease-in-out;
+        &:hover{
+            color: #14212b;
+            border-color: #ff4815;
+        }
+        &.style-1{
+            top: 0;
+            left: 0;
+        }
+        &.style-2{
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &.style-3{
+            top: 0;
+            right: 0;
+        }
+        &.style-4{
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &.style-5{
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &.style-6{
+            bottom: 0;
+            left: 0;
+        }
+        &.style-7{
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &.style-8{
+            bottom: 0;
+            right: 0;
+        }
+        .icon{
+            display: block;
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 32px;
+            line-height: 1;
+            color: #ff4815;
+        }
+        .icon-text{
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: var(--body-font);
+            margin-top: 5px;
+        }
+    }
+}

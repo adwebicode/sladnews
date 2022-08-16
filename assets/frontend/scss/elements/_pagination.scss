@@ -1,0 +1,56 @@
+/*----------------------------
+    Pagination
+----------------------------*/
+.pagination {
+    .pagination-list {
+        margin: 0 auto;
+
+        li {
+            display: inline-block;
+
+            .page-number {
+                color: #999999;
+                display: inline-block;
+                text-align: center;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                margin: 0 6px;
+                transition: all linear 0.2s;
+                border: 1px solid transparent;
+                font-weight: 600;
+                border-radius: 50%;
+                font-size: 16px;
+
+                &.disable {
+                    pointer-events: none;
+                    cursor: not-allowed;
+                }
+
+                &.able {
+                    border-color: var(--paragraph-color);
+                }
+
+                &.more {
+                    pointer-events: none;
+                }
+
+                &.current {
+                    background-color: var(--main-color-one);
+                    color: $white;
+                    border-color: var(--main-color-one);
+                }
+
+                &.left-arrow, &.right-arrow {
+                    border: none;
+                }
+
+                &:hover {
+                    background-color: var(--main-color-one);
+                    color: $white;
+                    border-color: var(--main-color-one);
+                }
+            }
+        }
+    }
+}

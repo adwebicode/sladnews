@@ -1,0 +1,13 @@
+//Brand Single Item
+.single-brand-item {
+  padding: 0 20px;
+
+  img {
+    opacity: .7;
+    transition: all 500ms;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

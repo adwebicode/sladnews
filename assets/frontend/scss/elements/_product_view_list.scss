@@ -1,0 +1,181 @@
+/*---------------------------------------
+    ## Product View list
+---------------------------------------*/
+.single-product-view-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid var(--form-bg-color);
+    transition: all linear 0.2s;
+
+    .product-thumb {
+        background-color: #FBFCFC;
+        position: relative;
+
+        .img-link {
+            display: block;
+            text-align: center;
+        }
+
+        .discount-tag {
+            position: relative;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 400;
+            color: #fff;
+            background-color: var(--special-color);
+            padding: 2px 9px 3px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: 2;
+        }
+    }
+
+    .product-content {
+        flex: 1;
+
+        .main-content {
+            padding: 33px 30px 40px;
+
+            .product-title {
+                font-family: var(--heading-font);
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                color: var(--heading-color);
+                text-transform: capitalize;
+                margin-bottom: 13px;
+            }
+
+            .product-meta {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #999999;
+                align-self: center;
+                margin-bottom: 10px;
+            }
+
+            .ratings {
+                margin-bottom: 20px;
+
+                .icon-wrap {
+                    display: inline-block;
+
+                    .icon {
+                        display: inline-block;
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: var(--secondary-color);
+                    }
+                }
+
+                .total-feedback {
+                    display: inline-block;
+                    color: #999999;
+                    font-size: 14px;
+                    line-height: 14px;
+                    vertical-align: 1px;
+                    margin-left: 6px;
+                }
+            }
+
+            .product-pricing {
+                margin-bottom: 29px;
+
+                del {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: #999999;
+                    vertical-align: 1px;
+                    margin-right: 8px;
+                }
+
+                .price {
+                    font-family: var(--heading-font);
+                    display: inline-block;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 29px;
+                    color: var(--main-color-one);
+                }
+            }
+
+            .btn-and-quick-key {
+                display: flex;
+            }
+
+            .btn-wrapper {
+                .add-cart-style-02 {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 18px;
+                    color: #000;
+                    background-color: var(--form-bg-color);
+                    border: 1px solid var(--form-bg-color);
+                    padding: 10px 60px;
+                    width: 100%;
+                    text-align: center;
+                    display: inline-block;
+                    transition: all linear 0.2s;
+                    border-radius: 22px;
+
+                    &:hover {
+                        background-color: var(--main-color-one);
+                        color: $white;
+                    }
+                }
+
+                .favourite {
+                    display: inline-block;
+                    font-size: 16px;
+                    line-height: 16px;
+                    color: var(--secondary-color);
+                    padding: 9px 9px 10px;
+                    background: var(--form-bg-color);
+                    margin-left: 10px;
+                    transition: all linear 0.2s;
+
+                    &:hover {
+                        background-color: var(--secondary-color);
+                        color: $white;
+                    }
+                }
+            }
+
+            .quick-key {
+                margin-left: 15px;
+
+                .quick-key-list {
+                    text-align: center;
+
+                    li {
+                        margin: 0 5px;
+                        display: inline-block;
+
+                        a {
+                            display: inline-block;
+                            font-size: 16px;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background-color: var(--form-bg-color);
+                            text-align: center;
+                            line-height: 40px;
+                            transition: all linear 0.2s;
+
+                            &:hover {
+                                background-color: var(--main-color-one);
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

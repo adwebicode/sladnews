@@ -1,0 +1,131 @@
+//service-details-item
+
+.service-details-item {
+  .thumbnail {
+    margin-bottom: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+.service-details-image{
+  margin-top: 35px;
+  margin-bottom: 33px;
+}
+  .quote-icon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    line-height: 1;
+    padding-bottom: 15px;
+    margin-right: 20px;
+    float: left;
+    color: $white;
+    background-color: var(--main-color-one);
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .wp-block-quote:not(.is-large):not(.is-style-large) {
+    border: none;
+    padding-left: 40px;
+  }
+
+  .service-quote {
+    background-color: var(--main-color-two);
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    color: $white;
+    z-index: 0;
+
+    &:before {
+      content: "\f10d";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 50px;
+      right: 45px;
+      color: #fff;
+      font-size: 180px;
+      line-height: .8;
+      opacity: .1;
+    }
+
+    p {
+      font-family: var(--heading-font);
+      color: $white;
+      font-size: 28px;
+      line-height: 1.5;
+      font-style: italic;
+    }
+    cite{
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+}
+
+.post-navigation-area {
+  padding-top: 40px;
+  border-top: 1px solid #eaeaea;
+
+  .post-navigation-inner {
+    .content-area {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      .content {
+        flex: 1;
+        width: calc(100% / 2);
+        word-break: break-word;
+        padding-right: 5px;
+      }
+
+      &.style-01 {
+        flex-direction: row-reverse;
+        text-align: right;
+
+        .content {
+          text-align: right;
+          padding-left: 5px;
+          padding-right: 0;
+        }
+
+        .thumb {
+          margin-right: 0;
+          margin-left: 30px;
+        }
+      }
+
+      .thumb {
+        width: 80px;
+        margin-right: 30px;
+      }
+
+      .title {
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+
+        span {
+          color: var(--main-color-one);
+        }
+      }
+    }
+  }
+}

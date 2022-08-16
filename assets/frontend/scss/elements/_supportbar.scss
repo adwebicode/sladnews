@@ -1,0 +1,78 @@
+/*---------------------------------------
+    ## Supportbar
+---------------------------------------*/
+.supportbar-area-wrapper {
+    padding: 20px 0;
+
+    .logo-wrapper {
+        display: flex;
+        height: 100%;
+
+        a {
+            align-self: center;
+        }
+    }
+
+    .content {
+        display: flex;
+        justify-content: flex-end;
+
+        .support-bar-search-box {
+            align-self: center;
+            margin-right: 50px;
+        }
+
+    }
+}
+
+.support-bar-search-box {
+    form {
+        .form-group {
+            display: flex;
+            width: 350px;
+            border: 1px solid #ddd;
+            margin-bottom: 0;
+
+            input {
+                display: inline-block;
+                border: none;
+                border-radius: 0;
+                height: 50px;
+                background-color: transparent;
+                padding-left: 18px;
+                color: #666666;
+
+                &::placeholder {
+                    color: #666666;
+                }
+
+            }
+
+            .search-btn {
+                flex: 1;
+                background-color: #fff;
+                color: #666666;
+                height: 50px;
+                border: none;
+                line-height: 50px;
+                padding: 0 20px;
+                transition: $transition;
+
+                .icon {
+                    transform: rotate(267deg);
+                    transition: $transition;
+                }
+            }
+        }
+    }
+
+    &.style-02 {
+        form {
+            .form-group {
+                width: 450px;
+                border-radius: 25px;
+                overflow: hidden;
+            }
+        }
+    }
+}

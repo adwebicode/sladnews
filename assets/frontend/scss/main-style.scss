@@ -1,0 +1,172 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+# Typography
+# Normalize
+# Accessibility
+# Globals
+# Alignments
+# Clearings
+# Posts and pages
+# Captions
+# Galleries
+# Unit test
+# guterberg
+# Gutenberg	Default Style
+# Block Color Palette Colors
+# Sections
+    ## Breadcrumb
+    ## Comments
+    ## Widgets
+    ## Nav Bar
+    ## Info Bar
+    ## Header
+    ## Header Bottom Area
+    ## Footer Area
+    ## Error 404 Area
+    ## Why us Area
+    ## Highly Skilled Area
+    ## Call TO Action Area
+    ## Testimonial Area
+    ## Top Lawyer Style 02
+    ## Counterup Area
+    ## Case Category Area
+    ## Legal Support Area
+    ## Practice Details Area
+    ## Attorney Details Area
+
+# Elements
+    ## Back Top
+    ## Preloader
+    ## Video Popup
+    ## Button
+    ## Blog
+    ## Accordion
+    ## contact Info Item
+    ## Quote block with sign
+    ## Counterup Item
+    ## Video With Image
+    ## Video Play Button
+    ## Why Us Item
+    ## Section Title
+    ## What we cover item
+    ## Icon Box Item
+    ## Testimonial Item
+    ## Case Categories Item
+    ## Quote With Image
+    ## Price Plan Item
+
+--------------------------------------------------------------*/
+
+
+//== Global Design
+@import "global/_mixins";
+@import "global/_variables";
+@import "global/_global";
+@import "global/_gutenberg";
+//== Pages
+//== Sections
+// @import "sections/_comments";
+@import "sections/_widgets";
+@import "sections/_navbar";
+// @import "sections/_info_bar";
+@import "sections/_top_bar";
+// @import "sections/_header";
+@import "sections/_footer";
+// @import "sections/_error_404"; 
+//@import "sections/_call_to_action";
+// @import "sections/_testimonial_area";
+// @import "sections/_request_form";
+// @import "sections/chat_box_area";
+@import "sections/_add_banner";
+// @import "sections/_section_spacing";
+// @import "sections/_catagory_area";
+// @import "sections/_top_product_and_shop";
+// @import "sections/_countdown";
+// @import "sections/_shop_grid";
+@import "sections/_breadcrumb";
+// @import "sections/_about";
+@import "sections/_contact_us";
+@import "sections/_error";
+@import "sections/_register";
+@import "sections/_blog_details";
+// @import "sections/_shop_details";
+// @import "sections/_checkout";
+// @import "sections/_order_completed";
+// @import "sections/_order_details";
+// @import "sections/_order_history";
+// @import "sections/_cart";
+// @import "sections/_wishlist";
+// @import "sections/_profile_and_edit_profile";
+@import "sections/_index_01";
+@import "sections/_support_bar"; 
+@import "sections/_index_02";
+@import "sections/_index_03";
+@import "sections/_index_04";
+@import "sections/_index_05"; 
+@import "sections/_hamburger";
+@import "sections/_author";
+@import "sections/_about_us";
+@import "sections/_search";
+//== Elements
+@import "elements/_back_top";
+@import "elements/_preloader";
+@import "elements/_button";
+// @import "elements/_blog";
+// @import "elements/_pgbar";
+@import "elements/_accordion";
+// @import "elements/_contact_info_item";
+// @import "elements/_quote_block_with_sign";
+// @import "elements/_page_form";
+// @import "elements/_blockquote";
+// @import "elements/_counterup_item";
+// @import "elements/_single_careers_item";
+// @import "elements/_video_with_image";
+// @import "elements/_single_event_item";
+// @import "elements/_video_play_btn";
+// @import "elements/_single_case_study_item";
+// @import "elements/_section_title";
+// @import "elements/_icon_box";
+// @import "elements/_social_link";
+// @import "elements/_search_popup";
+// @import "elements/_search_form";
+// @import "elements/_find_dream_course";
+// @import "elements/_course_category_item";
+// @import "elements/_team_single_item";
+// @import "elements/_testimonial_item";
+// @import "elements/_pgbar_single_item";
+// @import "elements/_brand_single_item";
+// @import "elements/_service_single_item";
+// @import "elements/_service_details_item";
+// @import "elements/_we_single_item";
+@import "elements/_blog_grid_item";
+// @import "elements/_portfolio_single_item";
+// @import "elements/_quote_with_img";
+// @import "elements/_portfolio_details_item";
+// @import "elements/_core_feature_item";
+// @import "elements/_single_price_plan";
+// @import "elements/_single_image_gallery";
+// @import "elements/_product_view_grid";
+// @import "elements/_brand_logo";
+// @import "elements/_support_area";
+// @import "elements/_toolbox";
+@import "elements/_pagination";
+// @import "elements/_product_view_list";
+@import "elements/_post_meta_and_social_link";
+@import "elements/_blog_list_item";
+// @import "elements/_order_status"; 
+@import "elements/_image_blog";
+@import "elements/_video_blog";
+@import "elements/_news_headline";
+@import "elements/_supportbar";
+//WP Unite_test
+// @import "wp_unite_test/_default_navbar";
+// @import "wp_unite_test/_wp_block";
+// @import "wp_unite_test/_wp_caption";
+// @import "wp_unite_test/_post_navigation";
+// @import "wp_unite_test/_wp_block_color";
+// @import "wp_unite_test/_wp_gallery";
+// @import "wp_unite_test/_wp_table";
+// @import "wp_unite_test/_wp_list";
+// @import "wp_unite_test/_wp_pagination";

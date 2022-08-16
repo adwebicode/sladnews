@@ -1,0 +1,119 @@
+/*----------------------------
+    Blog list Item
+-----------------------------*/
+// blog grid style 01
+.blog-list-style-01 {
+    display: flex;
+
+    .img-box {
+        position: relative;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .content {
+        flex: 1;
+        position: relative;
+        padding-left: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .content-inner {
+            margin-top: -4px;
+        }
+
+        .title {
+            font-family: var(--heading-font-one);
+            font-size: 32px;
+            line-height: 42px;
+            font-weight: 400;
+            transition: all linear 0.2s;
+
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+
+        .info {
+            margin: 25px 0 34px;
+        }
+    }
+
+    &.v-02 {
+        .img-box {
+            img {
+                border-radius: 0;
+            }
+        }
+
+        .content {
+            .content-inner {
+                margin-top: -4px;
+            }
+
+            .title {
+                font-family: var(--heading-font-two);
+                font-size: 32px;
+                line-height: 46px;
+                font-weight: 700;
+                transition: all linear 0.2s;
+
+                &:hover {
+                    color: var(--main-color-one);
+                }
+            }
+
+            .info {
+                margin: 25px 0 34px;
+            }
+        }
+    }
+}
+
+// blog list style 02
+.blog-list-style-02 {
+    display: flex;
+
+    .img-box {
+        position: relative;
+    }
+
+    .content {
+        align-self: center;
+        padding-left: 30px;
+        flex: 1;
+
+        .title {
+            font-family: var(--heading-font-two);
+            font-size: 26px;
+            margin-top: 10px;
+            font-weight: 700;
+            line-height: 34px;
+
+            a {
+                transition: all linear 0.2s;
+
+                &:hover {
+                    color: var(--main-color-one);
+                }
+            }
+        }
+    }
+}
+
+// index-01
+.recent-stories-area-wrapper {
+    &.index-01 {
+        .single-recent-stories-wrap {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

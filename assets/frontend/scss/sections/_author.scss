@@ -1,0 +1,116 @@
+/*----------------------------
+    Author
+-----------------------------*/
+// author grid
+.single-author-item {
+    .img-box {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 40%;
+            height: 4px;
+            background-color: var(--main-color-one);
+            transition: $transition;
+            opacity: 0;
+        }
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 12px;
+
+        .title {
+            font-family: var(--main-color-two);
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+            color: #333333;
+            text-transform: capitalize;
+            margin-bottom: 12px;
+            transition: $transition;
+            display: inline-block;
+
+            &:hover {
+                color: var(--main-color-one);
+            }
+        }
+    }
+
+    &:hover {
+        .img-box {
+            &::after {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//   author profile
+.author-profile {
+    border: 1px solid #ddd;
+    padding: 25px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .title {
+            font-family: var(--main-color-two);
+            font-size: 36px;
+            line-height: 36px;
+            font-weight: 700;
+            color: var(--heading-color);
+            text-transform: capitalize;
+
+        }
+
+        .designation {
+            font-size: 16px;
+            line-height: 28px;
+            font-style: italic;
+            text-transform: capitalize;
+            color: #444444;
+            margin-top: 15px;
+        }
+
+        .info {
+            font-size: 16px;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #666666;
+            margin-top: 25px;
+        }
+
+        .social-link {
+            margin-top: 20px !important;
+
+            li {
+                margin-right: 0 !important;
+
+                .icon {
+                    width: 22px !important;
+                    height: 22px !important;
+                    line-height: 22px !important;
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+}
+
+.author-post-title {
+    font-size: 42px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: var(--heading-font-two);
+    color: var(--heading-color);
+    margin-bottom: 60px;
+    text-transform: capitalize;
+}

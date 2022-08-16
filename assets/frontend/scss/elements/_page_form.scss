@@ -1,0 +1,76 @@
+//Page Form
+
+.request-page-form {
+  padding: 30px 40px 40px;
+  &.style-01 {
+    padding: 15px;
+    .form-group {
+      .form-control {
+        color: var(--paragraph-color);
+        background-color: $white;
+        border: 1px solid #c1c1c1;
+        &::placeholder {
+          color: #c1c1c1;
+        }
+      }
+    }
+    .submit-btn {
+      background-color: var(--secondary-color);
+      &:hover {
+        background-color: var(--main-color-two);
+        color: $white;
+        border: 1px solid var(--main-color-two);
+      }
+    }
+  }
+  .form-group {
+    textarea {
+      max-height: 100px;
+      min-height: 90px;
+      width: 100%;
+      resize: none;
+    }
+    .form-control {
+      border-radius: 0;
+      border: 1px solid rgba(#fff, 0.5);
+      padding: 15px 30px 15px 15px;
+      color: $white;
+      background-color: #1981d4;
+      &::placeholder {
+        color: rgba(#fff, 0.7);
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .submit-btn {
+    background-color: $white;
+    width: 100%;
+    padding: 19px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #111111;
+    transition: all .3s ease-in-out;
+    border: 1px solid $white;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--main-color-one);
+      color: $white;
+      border: 1px solid var(--main-color-one);
+    }
+  }
+}
+
+/*Ajex Loader*/
+.wpcf7 .ajax-loader {
+  display: none;
+}
+
+.wpcf7 form.submitting .ajax-loader {
+  display: block;
+}
+
+.request-page-form-wrap .wpcf7 form .wpcf7-response-output {
+  color: #fff;
+  border-color: #fff;
+}

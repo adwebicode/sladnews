@@ -1,0 +1,123 @@
+/*---------------------------------------
+    ## Button
+---------------------------------------*/
+.btn-wrapper {
+    display: block;
+
+    .btn-default {
+        font-size: 16px;
+        display: inline-block;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid var(--main-color-one);
+        background-color: var(--main-color-one);
+        color: #fff;
+        text-transform: capitalize;
+        padding: 10px 30px 11px;
+        transition: all linear 0.2s;
+        line-height: 20px;
+
+        &:hover {
+            background-color: transparent;
+            color: var(--main-color-one);
+        }
+
+        &.btn-color-02 {
+            color: #fff;
+
+            &:hover {
+                color: #1A1A27;
+                background-color: var(--main-color-one);
+            }
+        }
+
+        &.transparent-btn {
+            background-color: transparent;
+            border-color: var(--main-color-one);
+            color: var(--main-color-one);
+
+            &:hover {
+                background-color: var(--main-color-one);
+                border-color: var(--main-color-one);
+                color: $white;
+            }
+        }
+
+        &.transparent-btn-dark {
+            background-color: transparent;
+            border-color: var(--paragraph-color);
+            color: var(--paragraph-color);
+
+            &:hover {
+                background-color: var(--main-color-one);
+                border-color: var(--main-color-one);
+                color: $white;
+            }
+        }
+
+        &.transparent-btn-1-reverse {
+            background-color: var(--main-color-one);
+            border-color: var(--main-color-one);
+            color: $white;
+
+            &:hover {
+                background-color: transparent;
+                border-color: $white;
+                color: $white;
+            }
+        }
+
+
+        &.transparent-btn-2 {
+            background-color: transparent;
+            border-color: #DDDDDD;
+            color: #999999;
+
+            .icon {
+                display: inline-block;
+                padding-left: 8px;
+            }
+
+            &:hover {
+                background-color: var(--main-color-one);
+                border-color: var(--main-color-one);
+                color: $white;
+            }
+        }
+
+        &.btn-rounded {
+            border-radius: 25px;
+        }
+
+        &.semi-bold {
+            font-weight: 600;
+        }
+
+        &.ul-btn {
+            color: #666666;
+            margin-bottom: 10px;
+            background-color: transparent;
+            padding: 0px 0px 2px;
+            border: none;
+            border-bottom: 1px solid #666666;
+
+            &:hover {
+                border-color: var(--main-color-one);
+                color: var(--main-color-one);
+            }
+        }
+    }
+}
+
+.news-letter-btn {
+    display: inline-block;
+    border: 1px solid var(--main-color-one);
+    text-transform: capitalize;
+    background-color: var(--main-color-one);
+    color: #fff;
+    padding: 3px 25px;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: $transition;
+}
